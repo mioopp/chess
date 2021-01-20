@@ -38,7 +38,7 @@
           <source>12</source>
           <target>12</target>
           <release>12</release>
-          <mainClass>com.mioopp.HelloFX</mainClass>
+          <mainClass>com.mioopp.Domain</mainClass>
         </configuration>
       </plugin>
     </plugins>

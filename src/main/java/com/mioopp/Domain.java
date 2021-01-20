@@ -1,9 +1,9 @@
 package com.mioopp;
 
-import com.mioopp.js.chess.Bg;
-import com.mioopp.js.chess.Dot;
-import com.mioopp.js.chess.Man;
-import com.mioopp.js.chess.Pane;
+import com.mioopp.model.Bg;
+import com.mioopp.model.Dot;
+import com.mioopp.model.Man;
+import com.mioopp.model.Pane;
 import java.util.HashMap;
 import java.util.Map;
 import javafx.application.Application;
@@ -29,7 +29,7 @@ public class Domain extends Application implements Constant {
   Map<String, Man> mans = new HashMap<>();
 
   public static void main(String[] args) {
-      launch(args);
+    launch(args);
   }
 
   @Override
@@ -49,16 +49,16 @@ public class Domain extends Application implements Constant {
   }
 
   private void draw(GraphicsContext gc) {
-    for(ChessObject chessObject : chessObjects){
+    for (ChessObject chessObject : chessObjects) {
       chessObject.show(gc);
     }
   }
 
-  private static void initChess(){
-    Bg bg = new Bg("bg",0,0);
-    Dot dot = new Dot("dot",0,0);
+  private static void initChess() {
+    Bg bg = new Bg("bg", 0, 0);
+    Dot dot = new Dot("dot", 0, 0);
     dot.setShow(false);
-    Pane pane = new Pane("pane",0,0);
+    Pane pane = new Pane("pane", 0, 0);
     pane.setShow(false);
     chessObjects.add(bg);
     chessObjects.add(dot);
@@ -67,7 +67,7 @@ public class Domain extends Application implements Constant {
       for (int n = 0; n < initMap[i].length; n++) {
         String key = initMap[i][n];
         if (key != null) {
-          Man man = new Man(key,n,i);
+          Man man = new Man(key, n, i);
           chessObjects.add(man);
         }
       }

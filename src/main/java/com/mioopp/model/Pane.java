@@ -1,7 +1,7 @@
 package com.mioopp.model;
 
-import com.mioopp.js.ChessObject;
-import com.mioopp.js.JsConstant;
+import com.mioopp.ChessObject;
+import com.mioopp.Constant;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
 
@@ -9,7 +9,7 @@ import javafx.scene.image.Image;
  * @author mioopp
  * @create 2021-01-18 15:54
  */
-public class Pane implements ChessObject,JsConstant {
+public class Pane implements ChessObject, Constant {
 
   private int x;
 

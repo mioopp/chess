@@ -1,9 +1,8 @@
 package com.mioopp.model;
 
-import com.mioopp.chess.Chess;
-import com.mioopp.js.ChessInfo;
-import com.mioopp.js.ChessObject;
-import com.mioopp.js.JsConstant;
+import com.mioopp.ChessInfo;
+import com.mioopp.ChessObject;
+import com.mioopp.Constant;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
 
@@ -11,7 +10,7 @@ import javafx.scene.image.Image;
  * @author mioopp
  * @create 2021-01-18 15:15
  */
-public class Man implements ChessObject,JsConstant {
+public class Man implements ChessObject, Constant {
 
   private String pater;
 
