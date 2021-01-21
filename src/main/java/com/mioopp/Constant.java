@@ -1,6 +1,6 @@
 package com.mioopp;
 
-import com.mioopp.chess.ArrayUtil;
+import com.mioopp.util.ArrayUtil;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
